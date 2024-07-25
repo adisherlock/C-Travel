@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Tilt Neon", sans-serif;
+}
+/* Navbar Start */
+body{
+    background-image: url(../image/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+.navbar{  
+    padding: 8px 20px;
+    transition: all .50s ease; 
+}
+.nav-link:hover{
+    background-color: #0000ff;
+    border-radius: 7px;
+    padding: 5px 5px;
+}  
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fcfafa;       
+} 
+.navbar-brand:hover{
+    background-color: #0000ff;
+    color: #fcfafa ;
+    border-radius: 7px;
+    padding: 5px 5px;
+    
+}
+ .nav-item .nav-link{
+    font-size: 15px;
+    font-size: 550;
+    color: #fcfafa;  
+}
+span{
+    color: #e3b50b;
+}
+/* Navbar End */
+
+/* home section start */
+section{
+    transition: all .50s ease;  
+}
+.home-section{
+    padding: 90px 11% 90px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;  
+}
+.home-section img{
+    flex: 1 1 300px;   
+}
+.home-section .img img{
+    width:100%;  
+}
+.home-content{
+    flex: 1 1 400px;
+}
+h4{
+    color: #fcfafa;
+}
+.home-section .home-content p{
+    color: #fcfafa ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.home-section .home-content h1{
+    color: #fcfafa;
+    font-size: 42px;
+    font-weight: 700;
+}
+.changecontent::after{
+    content: ' ';
+    color: #e7b70c;
+    text-shadow: 0px 1px 1px #000000;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "Czech Republic";}
+    40%{content: "Egypt";}
+    50%{content: "Poland";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home-section .home-content button{
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #eeeef3;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #d5d5ee;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.home-section .home-content button:hover{
+    color: #ffffff;
+    background-color: #0000ff;
+    box-shadow: 0 0 30px 5px #0000ff;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+@media (max-width:990px){
+    .home-section .text{
+        font-size: 30px;
+    }    
+    .home-section p{
+        font-size: 20px;
+    } 
+}
+@media (max-width:903px){
+    .home-section{
+        height: auto;
+    }    
+}
+/* home section end */
+/* offers section start */
+.offers-section{
+    padding: 60px 11% 60px;
+    transition: all .50s ease;
+    color: white;
+}
+.offers-section h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;   
+}
+.offers-section .card{
+    padding: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1,) 0px 4px 12px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.offers-section .card:hover{
+    transform: scale(1.1) ;
+}
+.offers-section .card .icon{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0000ff;    
+}
+.offers-section .card .places{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+/* offers section end */
+/* destination section start */
+.destination-section{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 11% 60px;
+    transition: all .50s ease;
+    color: white ;
+    
+}
+.destination-section .destination{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.destination-section .card{
+    
+    border-radius: 10px;
+    cursor: pointer;
+}
+.destination-section .card:hover{
+    transform: scale(1.1);
+}
+.destination-section .card img{
+    border-radius: 10px;
+}
+.destination-section .card-img-overlay h3{
+    
+    color: #ffffff;
+}
+.destination-section .card-img-overlay h6{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+/* destination section end */
+/* About Section start */
+.about{
+    padding: 100px 11% 100px;
+    transition: all .50s ease ;
+    color: white;
+}
+.about .card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about-btn{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0000ff;
+    color: #ffffff;
+    transition: .50s ease ;
+    cursor: pointer;
+}
+.about-btn:hover{
+    width: 135px;
+}
+/* About Section end */
+/* package section start */
+.packages{
+    padding: 100px 11% 100px;
+    transition: all .50s ease ;
+    color: white;
+}
+.packages h1{
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.packages .card{
+    margin: 15px;
+    padding-right: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card:hover{
+    transform: scale(1.1);
+}
+.packages .card img{
+    padding: 10px;
+   height: 200px;  
+}
+.packages .card-body h3{
+    font-size: 25px;
+}
+.packages .row{
+    margin-top: 20px;
+}
+.rating {
+    color: #ffa500;
+}
+.packages h5{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.packages h5 button{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    color: #0000ff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.packages h5 button:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+/* package section end */
+
+/* reviews section start */
+.reviews{
+    padding: 100px 11% 100px;
+    transition: all .50s ease ;
+    color: white;    
+}
+.reviews h3{
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.reviews .card{
+    padding: 10px;
+    transition:all 0.5s ease;
+    cursor: pointer;
+}
+.reviews .card:hover{
+    background-color: #636366;
+    color: #ffffff;
+    transform: scale(1.1);
+    
+}
+.reviews img{
+    width: 70px;
+    border-radius: 50px;
+}
+.star{
+    margin-top: 20px;
+    color: orange;
+}
+/* reviews section end */
+
+/* contact section start */
+.contact{
+    padding: 100px 11% 100px;
+    transition: all .50s ease ;
+    
+}
+.contact h1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.contact h5{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.social h3{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #060606;
+}
+.social .icon{
+    padding: 10px;
+    background: transparent;
+    color: #0000ff;
+    border: 2px solid #0000ff;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social .icon:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+.contact .col-md-5{
+    background-color:   white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.contact .get{
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+}
+.contact .get-2{
+    color: white;
+}
+.form-control{
+    resize: none;
+}
+.contact button{
+    background-color: #0000ff;
+    width: 150px;
+    color: #ffffff;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .50s ease ;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact button:hover{
+    width: 170px;
+}
+/* contact section end */
+/* footer section start */
+#footer{
+    margin-top: 50px;
+    padding: 50px 11% 50px;
+    transition: all .50s ease ;   
+}
+#footer{
+    color: white;
+}
+#footer .contact-2{
+    color: white;
+}
+#footer .footer-color{
+    color: #ffffff;
+}
+#footer ul li a{
+    text-decoration: none;
+    transition: .50s;  
+}
+#footer ul li a:hover{
+    color: #1b1bdf;
+}
+#footer ul li {
+    list-style-type: none;
+   
+}
+#footer .col-md-3 a{
+    text-decoration: none;
+    color: #ede5e5;
+}
+#footer .col-md-6 a:hover{
+    color: #0000ff;
+}
+.social-2 .icons{
+    padding: 10px;
+    background: transparent;
+    color: #f0f0f4;
+    border: 2px solid orange;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social-2 .icons:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+#footer .copy-right{
+    padding: 0px 2.5% 0px;
+    font-size: 15px;  
+}
+#footer .copy-right a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #3373f3e2;
+}
+
+/* footer section End */
